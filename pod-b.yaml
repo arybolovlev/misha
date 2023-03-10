@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: misha-b
+spec:
+  serviceAccountName: sa-misha
+  automountServiceAccountToken: true
+  containers:
+  - name: misha
+    image: arybolovlev/misha:0.0.5
