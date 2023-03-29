@@ -37,7 +37,7 @@ func main() {
 	// CREATE
 	o := &nodev1.RuntimeClass{
 		ObjectMeta: metav1.ObjectMeta{
-			GenerateName: "runtimeClass-",
+			Name: "runtime-class",
 		},
 		Handler: "runc",
 	}
